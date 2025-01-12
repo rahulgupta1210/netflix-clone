@@ -2,8 +2,11 @@
 # npx create-react-app (appname)
 # npm install tailwindcss
 # npx tailwindcss init
+//router
+# npm install -D react-router-dom 
 
 # HMR by default 
+# rafce -react arrow fun comp export
 
 # Features--
 - Login/SignUp screen
