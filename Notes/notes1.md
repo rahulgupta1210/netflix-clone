@@ -23,3 +23,6 @@
 -Netflix GPT
     -search bar
     -movies suggestions
+
+
+# use formik if using big frms in React
