@@ -29,3 +29,31 @@
 
 # useRef
 - use to give reference
+
+# Firebase setup and deploying app to prod
+
+npm install firebase
+
+firebase login
+
+npm install -g firebase-tools
+
+firebase init
+
+npm run build
+
+firebase deploy
+
+# create signup user account
+
+# once siginin success we will update in redux 
+
+-created Redux and store with userslice
+
+//use hooks on component top
+
+//useeffect used bcz we need it once when user logged in or signout it ll be executed we can controll everything from one place
+//signout
+
+//fetch movies from tmdb
+
