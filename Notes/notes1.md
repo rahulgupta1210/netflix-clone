@@ -57,3 +57,7 @@ firebase deploy
 
 //fetch movies from tmdb
 
+ //this unsubscribe will be called when component is unmount- onAuthStateChanged callback
+
+ //create constant file
+
