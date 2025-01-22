@@ -12,12 +12,7 @@ export const movieOption  = {
     }
   };
 
-  const options = {
-    method: 'GET',
-    headers: {
-      accept: 'application/json',
-      Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIzYTMzODk3ZDk1MmMyNjEyYTg1ZTk1NzNmOTk1MjlhYyIsIm5iZiI6MTczNzM5MjgzNC42NDEsInN1YiI6IjY3OGU4MmMyOWNiMDcxOWY3NDY1MDAzMyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.BabXX5Hml9tiSknMLGJuyIaN51ZrzKmtGTQkoAamyNY'
-    }
-  };
+
+  export const IMG_CDN_URL ="https://image.tmdb.org/t/p/w780";
   
  
