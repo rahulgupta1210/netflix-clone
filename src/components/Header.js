@@ -7,6 +7,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 import { addUser,removeUser } from '../utils/userSlice';
 import {Logo} from "./../utils/constant";
+import { toggleGptSearchView } from '../utils/gptSlice';
 
 
 
@@ -48,17 +49,31 @@ const Header = () => {
           //this unsubscribe will be called when component is unmount
           return ()=> unsubscribe();
     },[])
+
+
+    const handleGptSearchClick =()=>{
+        //Toggle GPT search
+        dispatch(toggleGptSearchView());
+    }
     return (
         <div className='absolute px-8 py-2 bg-gradient-to-b from-black z-10 w-screen flex justify-between' >
-
+            
             <img className='w-40 rounded-lg'
                 src={Logo}
                 alt='logo' />
+             {user && (   
             <div className='flex p-2'>
+                <select>
+                    <option value="en">English</option>
+                    <option value="hindi">Hindi</option>
+                    <option value="spanish">Spanish</option>
+                </select>
+                <button className='py-2 px-4 mx-4 my-2 bg-purple-800 text-white rounded-lg' onClick={handleGptSearchClick}>GPT Search</button>
                 <img className='w-12 h-12'
                     alt="usericon" src={user?.photoURL} />
                 <button className='font-bold text-2xl' onClick={handleSignOut}>Sign Out</button>
             </div>
+             )}
         </div>
 
     )
