@@ -4,11 +4,11 @@ const language ={
         search:'Search',
         gptSearchPlaceholder:'What would you like to watch today?',
     },
-    hindi:{
+    hi:{
         search:'खोजें',
         gptSearchPlaceholder:'आज आप क्या देखना चाहेंगे?',
     },
-    spanish:{
+    es:{
         search:'Buscar',
         gptSearchPlaceholder:'¿Qué te gustaría ver hoy?',
     }

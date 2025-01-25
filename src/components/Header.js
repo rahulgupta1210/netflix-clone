@@ -9,7 +9,6 @@ import { addUser, removeUser } from '../utils/userSlice';
 import { Logo, SUPPORTED_LANGUAGES } from "./../utils/constant";
 import { toggleGptSearchView } from '../utils/gptSlice';
 import { changeLanguage } from '../utils/configSlice';
-import GptSearch from './GptSearch';
 
 
 
@@ -18,7 +17,7 @@ const Header = () => {
     const navigate = useNavigate();
     const dispatch = useDispatch();
     const user = useSelector((state) => state.user);
-    const showGptSearch = useSelector((state) => state.gpt.showGptSearch);
+    const showGptSearch = useSelector((state) => state.gpt.showgptSearch);
     const handleSignOut = () => {
         signOut(auth).then(() => {
             // Sign-out successful.
@@ -81,7 +80,7 @@ const Header = () => {
                         </select>
                     }
                     <button className='py-2 px-4 mx-4 my-2 bg-purple-800 text-white rounded-lg' onClick={handleGptSearchClick}>
-                    {showGptSearch ? 'GPT Search' : 'Home Page'}
+                    {showGptSearch ? 'Home Page':'GPT Search'}
                         </button>
                     <img className='w-12 h-12'
                         alt="usericon" src={user?.photoURL} />

@@ -21,4 +21,5 @@ export const movieOption  = {
     {identifier:"es",name:"Spanish"}
   ];
   
+ export const OPENAI_KEY ='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';
  
