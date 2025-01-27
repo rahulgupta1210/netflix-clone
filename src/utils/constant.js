@@ -8,7 +8,8 @@ export const movieOption  = {
     method: 'GET',
     headers: {
       accept: 'application/json',
-      Authorization: 'Bearer ' + process.env.REACT_APP_TMDB_API_KEY
+      //Authorization: 'Bearer ' + process.env.REACT_APP_TMDB_API_KEY
+    Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIzYTMzODk3ZDk1MmMyNjEyYTg1ZTk1NzNmOTk1MjlhYyIsIm5iZiI6MTczNzM5MjgzNC42NDEsInN1YiI6IjY3OGU4MmMyOWNiMDcxOWY3NDY1MDAzMyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.BabXX5Hml9tiSknMLGJuyIaN51ZrzKmtGTQkoAamyNY'
     }
   };
 
